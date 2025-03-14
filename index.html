@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky jet</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<style>
+          .tab {
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 10px 0;
+        border-radius: 50px;
+        height: 70px; /* Фиксированная высота для десктопа */
+      }
+
+      .tab button {
+        background-color: inherit;
+        flex: 1 0 auto;
+        margin: 0 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 20px;
+        transition: 0.3s;
+        color: #fff;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 16px;
+        font-family: "Intro", Arial, sans-serif;
+      }
+
+      .tab button img {
+        max-width: 38px;
+        height: 38px;
+      }
+
+      .tab button:hover {
+        background-color: #555;
+        transform: translateY(-2px);
+      }
+
+      .tab button.active {
+        background-color: #666;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Медиазапросы для адаптации на мобильных устройствах */
+      @media (max-width: 768px) {
+        .tab {
+          height: 70px; /* Фиксированная высота для планшетов */
+        }
+
+        .tab button {
+          margin: 0 5px;
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+
+        .tab button img {
+          max-width: 32px;
+          height: 32px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .tab {
+          height: 70px; /* Фиксированная высота для мобильных устройств */
+        }
+
+        .tab button {
+          margin: 0 3px;
+          padding: 8px 12px;
+          font-size: 12px;
+        }
+
+        .tab button img {
+          max-width: 28px;
+          height: 28px;
+        }
+      }
+
+      /* Убираем синий эффект выделения при нажатии на мобильных устройствах */
+      button,
+      select,
+      input,
+      textarea,
+      a {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-focus-ring-color: transparent;
+        outline: none;
+      }
+
+      * {
+        -webkit-tap-highlight-color: transparent; /* Убирает подсветку при нажатии на любом элементе */
+        -webkit-touch-callout: none; /* Отключает вызов меню на долгий тап */
+      }
+          @font-face {
+        font-family: "Intro";
+        src: url("fonts/intro.otf") format("opentype");
+      }
+        header {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-family: "Intro", Arial, sans-serif;
+        box-sizing: border-box;
+        font-size: 24px;
+      }
+      header img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+
+</style>
+<body class="page">
+    <header>
+        <img src="logo.jpg" alt="Logo" />
+        <span>JAMAL SIGNAL</span>
+      </header>
+      <canvas id="particleCanvas"></canvas>
+    
+   
+    <div class="cv">
+        <img id="ob1" class="obloko" src="images/obl.svg">
+        <img id="ob2" class="obloko2" src="images/obl.svg">
+        
+    </div>
+
+
+   
+    <div class="winner">
+        <img  class="luck" src="images/Lucky.svg">
+        <img class="win" src="images/1win_logo.png">
+    </div>
+
+    
+
+    <div class="rocket">
+        
+        <a href="https://1wowar.life/casino/list?open=register" target="_blank2">
+            <button class="button2">GO TO GAME</button>
+        </a>
+
+        <div id="responseText" class="text"></div>
+        <div class="loader2"></div>
+        <div class="visible">
+            <iframe id="myIframe" src="https://100hp.app/lucky/onewin/?exitUrl=https%253A%252F%252F1wdqjx.top%252Fcasino&language=ru&b=demo" onload="hideElements()" scrolling="no"></iframe>
+        </div>
+   
+
+        <div class="tab">
+            <button
+              class="tablinks games-icon"
+              data-tab="Games"
+              onclick="window.location.href='https://unermindden.github.io/uzbekibot.github.io/';"
+            >
+              <img src="images/back.png" alt="Игры" />
+            </button>
+          </div>
+    <script src="script.js"></script>
+   
+    <div id="result" class="rand"></div>
+    
+
+</body>
+</html>
